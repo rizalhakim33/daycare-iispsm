@@ -2,6 +2,20 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import { DM_Sans, Cormorant_Garamond } from "next/font/google";
+import Link from 'next/link'
+
+// Konfigurasi font
+const dmSans = DM_Sans({ 
+  subsets: ["latin"],
+  weight: ["400", "500", "700"] 
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"]
+});
 
 export default function LoginPage() {
   const router = useRouter();

@@ -6,6 +6,7 @@ import { createClient } from "@/lib/supabase/client";
 import { Profile } from "@/types";
 import clsx from "clsx";
 
+
 const NAV = [
   { href: "/guru/dashboard",    icon: "📊", label: "Dashboard" },
   { href: "/guru/data-siswa",   icon: "👤", label: "Data Siswa" },

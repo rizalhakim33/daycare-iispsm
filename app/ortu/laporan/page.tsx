@@ -3,6 +3,7 @@ import { FITRAH_LIST, CAPAIAN_OPTIONS } from "@/types";
 import { format } from "date-fns";
 import { id } from "date-fns/locale";
 
+
 export default async function OrtuLaporanPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
