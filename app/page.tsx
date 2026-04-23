@@ -183,7 +183,7 @@ export default function LandingPage() {
 
         /* Mobile menu */
         .mobile-menu{
-          display:none;position:fixed;top:68px;left:0;right:0;z-index:199;
+          display:none;position:fixed;top:60px;left:0;right:0;z-index:199;
           background:rgba(247,245,240,0.98);backdrop-filter:blur(14px);
           border-bottom:1px solid var(--green-border);
           padding:20px 24px 28px;flex-direction:column;gap:16px;
