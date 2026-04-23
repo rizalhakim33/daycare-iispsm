@@ -1,8 +1,0 @@
-{
-  "/guru/dashboard/page": "app/guru/dashboard/page.js",
-  "/guru/laporan/page": "app/guru/laporan/page.js",
-  "/guru/daily-report/page": "app/guru/daily-report/page.js",
-  "/guru/portofolio/page": "app/guru/portofolio/page.js",
-  "/guru/pengumuman/page": "app/guru/pengumuman/page.js",
-  "/guru/riwayat/page": "app/guru/riwayat/page.js"
-}
