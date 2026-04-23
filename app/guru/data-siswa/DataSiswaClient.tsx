@@ -58,7 +58,7 @@ export default function DataSiswaClient({ siswaList: initial, ortuList }: Props)
     if (editId) {
       const { error } = await supabase.from("siswa").update(payload).eq("id", editId);
       if (error) { setMsg("Gagal: " + error.message); setSaving(false); return; }
-      setSiswaList(prev => prev.map(s => s.id === editId ? { ...s, ...payload } : s));
+      setSiswaList(prev => prev.map(s => s.id === editId ? { ...s, ...payload } as Siswa & { ortu?: Profile } : s));
     } else {
       const { data, error } = await supabase.from("siswa").insert(payload).select().single();
       if (error) { setMsg("Gagal: " + error.message); setSaving(false); return; }
