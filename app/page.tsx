@@ -902,8 +902,8 @@ export default function LandingPage() {
               <h4>🏫 Open House Bulanan</h4>
               <p>Kunjungi sekolah kami setiap Sabtu pertama tiap bulan. Lihat langsung fasilitas, program, dan suasana belajar.</p>
               <div className="open-house-btns">
-                <Link href="#contact" className="btn-sm-dark" >Daftar Online</Link>
-                <button className="btn-sm-green" onclick="window.open('https://wa.me/6281615784070','_blank')">Hubungi Kami</button>
+                <Link className="btn-sm-dark" href="#contact">Daftar Online</Link>
+                <Link className="btn-sm-green" href="https://wa.me/6281615784070','_blank'">Hubungi Kami</Link>
               </div>
             </div>
           </div>
