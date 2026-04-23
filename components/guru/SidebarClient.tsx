@@ -5,7 +5,7 @@ import { useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { Profile } from "@/types";
 import clsx from "clsx";
-
+import Image from 'next/image';
 
 const NAV = [
   { href: "/guru/dashboard",    icon: "📊", label: "Dashboard" },
