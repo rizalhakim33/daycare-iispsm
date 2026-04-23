@@ -12,7 +12,7 @@ export default async function DataSiswaPage() {
   // All orang tua profiles (for linking)
   const { data: ortuList } = await supabase
     .from("profiles")
-    .select("id, full_name, phone")
+    .select("*")
     .eq("role", "ortu")
     .order("full_name");
 
