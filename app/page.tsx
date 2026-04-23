@@ -868,7 +868,7 @@ export default function LandingPage() {
         </div>
         <div className="contact-grid">
           <ContactForm />
-          <div>
+        </div>
             <div className="contact-info-card" style={{marginBottom:"20px"}}>
               <h3>Informasi Kontak</h3>
               {[
