@@ -337,7 +337,8 @@ export default function LandingPage() {
         }
         .fac-img-placeholder{
           width:100%;height:100%;
-          background:linear-gradient(135deg,var(--green-dark) 0%,var(--green-mid) 100%);
+          background-image: url("https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/portofolio/c2568347-25cf-4647-8ac4-397723dc668a/1776917994395.png");
+          background-size: cover;
           display:flex;flex-direction:column;align-items:center;justify-content:center;
           color:rgba(255,255,255,0.4);font-size:48px;
         }
@@ -550,7 +551,7 @@ export default function LandingPage() {
           .sec-title{font-size:30px}
         }
       `}</style>
-
+      
       {/* NOTIFY TOAST */}
       <div className="notify" id="notify"><span id="notify-msg">Tersimpan!</span></div>
 
@@ -753,8 +754,6 @@ export default function LandingPage() {
           <div className="fac-right">
             <div className="fac-img-box">
               <div className="fac-img-placeholder">
-                🏫
-                <p>Foto Fasilitas</p>
               </div>
               <div className="halal-badge">HALAL<br/>MUI</div>
             </div>
