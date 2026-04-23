@@ -152,7 +152,7 @@ export default function LandingPage() {
         .hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
         .hero-content{
           position:relative;z-index:2;
-          padding:0 64px 100px;
+          padding:64px 64px;
           max-width:780px;
         }
         .hero-title{
@@ -488,7 +488,7 @@ export default function LandingPage() {
         /* ── RESPONSIVE ── */
         @media(max-width:1024px){
           nav{padding:0 32px}
-          .hero-content{padding:0 32px 80px}
+          .hero-content{padding:32px 32px}
           .hero-title{font-size:60px}
           section,.vision-section,.contact-section,.sensori-section,.facilities-section,.gallery-section,.programs-section{padding:72px 32px}
           .portal-cta{padding:48px 32px}
@@ -503,9 +503,9 @@ export default function LandingPage() {
           .nav-right .btn-login,.nav-right .btn-gold{display:none}
           .hamburger{display:flex}
 
-          .hero{min-height:80vh}
+          .hero{min-height:90vh}
           .hero-badge-top{font-size:10px;padding:6px 14px;top:24px;letter-spacing:0.5px}
-          .hero-content{padding:0 20px 56px;max-width:100%}
+          .hero-content{padding:20px 20px;max-width:100%}
           .hero-title{font-size:42px}
           .hero-desc{font-size:15px}
           .hero-actions{gap:10px}
@@ -604,10 +604,6 @@ export default function LandingPage() {
           <div style={{position:"absolute",top:"20%",right:"10%",width:"200px",height:"200px",borderRadius:"50%",background:"rgba(255,255,255,0.03)"}}></div>
         </div>
         <div className="hero-bg"></div>
-        <div className="hero-badge-top">
-          <span className="hero-badge-dot"></span>
-          IIS PSM DAYCARE &amp; PRESCHOOL – MAGETAN
-        </div>
         <div className="hero-content">
           <h1 className="hero-title">Where Young<br/>Khalifahs Begin</h1>
           <p className="hero-desc">A nurturing Islamic environment for children aged 3 months – 6 years. We raise faithful, curious, and joyful little ones — rooted in akhlaq, ready for the world.</p>
