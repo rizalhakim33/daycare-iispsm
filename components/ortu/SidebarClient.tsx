@@ -5,6 +5,8 @@ import { useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { Profile } from "@/types";
 import clsx from "clsx";
+import Image from 'next/image';
+
 
 const NAV = [
   { href: "/ortu/dashboard",  icon: "🏠", label: "Beranda" },
@@ -40,7 +42,9 @@ export default function OrtuSidebarClient({
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white font-bold text-xs">
-              IIS
+              <Image
+                src="https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/favicon/favicon.png"
+                alt="IIS PSM Magetan" />
             </div>
             <div>
               <div className="text-white font-semibold text-sm leading-tight">Portal Orang Tua</div>
@@ -132,7 +136,7 @@ export default function OrtuSidebarClient({
         style={{ background: "var(--green-dark)", borderBottom: "1px solid rgba(255,255,255,0.1)" }}
       >
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white font-bold text-xs">
+          <div className="w-8 h-8 rounded-full items-center justify-center text-white font-bold text-xs">
             IIS
           </div>
           <div>
