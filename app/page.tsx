@@ -2,6 +2,7 @@
 import { useState } from "react";
 import React from "react";
 import { DM_Sans, Cormorant_Garamond } from "next/font/google";
+import Link from 'next/link'
 
 // Konfigurasi font
 const dmSans = DM_Sans({ 
@@ -901,8 +902,8 @@ export default function LandingPage() {
               <h4>🏫 Open House Bulanan</h4>
               <p>Kunjungi sekolah kami setiap Sabtu pertama tiap bulan. Lihat langsung fasilitas, program, dan suasana belajar.</p>
               <div className="open-house-btns">
-                <button className="btn-sm-dark">📋 Daftar Online</button>
-                <button className="btn-sm-green">📞 Hubungi Kami</button>
+                <Link href="#contact" className="btn-sm-dark" >Daftar Online</Link>
+                <button className="btn-sm-green" onclick="window.open('https://wa.me/6281615784070','_blank')">Hubungi Kami</button>
               </div>
             </div>
           </div>
