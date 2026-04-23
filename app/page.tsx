@@ -124,7 +124,7 @@ export default function LandingPage() {
         .nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
         .nav-logo{
           width:42px;height:42px;border-radius:50%;
-          background:var(--green-dark);
+          background-image:url("https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/favicon/favicon.png");
           display:flex;align-items:center;justify-content:center;
           font-family:'DM Sans',sans-serif;font-weight:700;font-size:14px;color:white;letter-spacing:0.5px;
         }
@@ -636,7 +636,7 @@ export default function LandingPage() {
       {/* NAV */}
       <nav>
         <a className="nav-brand" href="#">
-          <div className="nav-logo">IIS</div>
+          <div className="nav-logo"></div>
           <div>
             <div className="nav-name">IIS PSM</div>
             <div className="nav-sub">Daycare &amp; Preschool – Magetan</div>
