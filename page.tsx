@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function LandingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -552,7 +553,7 @@ export default function LandingPage() {
       `}</style>
 
       {/* NOTIFY TOAST */}
-      <div className="notify" id="notify"><span id="notify-msg">Tersimpan!</span></div>
+      <div className="notify" id="notify">✅ <span id="notify-msg">Tersimpan!</span></div>
 
       {/* NAV */}
       <nav>
@@ -573,6 +574,7 @@ export default function LandingPage() {
         </ul>
 
         <div className="nav-right">
+          <Link href="/login" className="btn-login">🔐 Masuk Portal</Link>
           <button className="btn-gold" onClick={() => scrollTo("contact")}>Daftar Sekarang</button>
         </div>
 
@@ -593,6 +595,7 @@ export default function LandingPage() {
         <button onClick={() => scrollTo("facilities")}>Facilities</button>
         <button onClick={() => scrollTo("gallery")}>Gallery</button>
         <button onClick={() => scrollTo("contact")}>Contact</button>
+        <Link href="/login" className="mobile-login">🔐 Masuk Portal</Link>
         <button className="mobile-daftar" onClick={() => scrollTo("contact")}>Daftar Sekarang</button>
       </div>
 
@@ -615,6 +618,7 @@ export default function LandingPage() {
           <div className="hero-actions">
             <button className="btn-gold-solid" onClick={() => scrollTo("programs")}>Explore Programs</button>
             <button className="btn-outline-white" onClick={() => scrollTo("contact")}>Daftar Sekarang</button>
+            <Link href="/login" className="btn-portal-hero">🔐 Masuk Portal</Link>
           </div>
           <div className="hero-stats">
             <div className="hero-stat">
@@ -859,6 +863,18 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* PORTAL CTA */}
+      <div className="portal-cta">
+        <div className="portal-cta-text">
+          <h2>Portal Guru &amp; Orang Tua</h2>
+          <p>Pantau perkembangan anak secara real-time. Guru dapat menginput portofolio harian, laporan 3 bulanan, dan daily report — semua terkirim langsung ke orang tua.</p>
+        </div>
+        <div className="portal-cta-actions">
+          <Link href="/login" className="btn-portal-main">🔐 Masuk ke Portal →</Link>
+          <div className="portal-badge">Tersedia untuk Guru &amp; Orang Tua</div>
+        </div>
+      </div>
 
       {/* FOOTER */}
       <footer>

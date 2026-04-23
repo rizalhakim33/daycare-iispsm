@@ -45,7 +45,7 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL("/login?error=no_role", request.url));
   }
 
-  if (pathname === "/" || pathname === "/login") {
+  if (pathname === "/portal" || pathname === "/login") {
     if (role === "guru") return NextResponse.redirect(new URL("/guru/dashboard", request.url));
     if (role === "ortu") return NextResponse.redirect(new URL("/ortu/dashboard", request.url));
   }
