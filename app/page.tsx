@@ -166,9 +166,9 @@ export default function LandingPage() {
         }
         .hero-vision{
           font-size:13px;color:rgba(255,255,255,0.55);
-          font-style:italic;margin-bottom:36px;max-width:540px;
+          font-style:italic;margin-bottom:30px;max-width:540px;
         }
-        .hero-actions{display:flex;gap:14px;margin-bottom:64px;flex-wrap:wrap}
+        .hero-actions{display:flex;gap:14px;margin-bottom:30px;flex-wrap:wrap}
         .btn-gold-solid{
           background:var(--gold);color:white;border:none;
           padding:14px 28px;border-radius:30px;
@@ -605,7 +605,7 @@ export default function LandingPage() {
         </div>
         <div className="hero-bg"></div>
         <div className="hero-content">
-          <h1 className="hero-title">Where Young<br/>Khalifahs Begin</h1>
+          <h1 className="hero-title">Where Young Khalifahs Begin</h1>
           <p className="hero-desc">A nurturing Islamic environment for children aged 3 months – 6 years. We raise faithful, curious, and joyful little ones — rooted in akhlaq, ready for the world.</p>
           <p className="hero-vision"><em>&ldquo;Sekolah teladan dalam mencetak generasi muda Indonesia yang memiliki pemikiran global dan menjalankan nilai-nilai Islami&rdquo;</em></p>
           <div className="hero-actions">
