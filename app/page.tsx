@@ -1,6 +1,19 @@
 "use client";
 import { useState } from "react";
 import React from "react";
+import { DM_Sans, Cormorant_Garamond } from "next/font/google";
+
+// Konfigurasi font
+const dmSans = DM_Sans({ 
+  subsets: ["latin"],
+  weight: ["400", "500", "700"] 
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"]
+});
 
 // 1. Definisikan ContactForm di luar (Top-Level)
 function ContactForm() {
