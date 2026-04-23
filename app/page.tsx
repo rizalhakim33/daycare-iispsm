@@ -868,17 +868,16 @@ export default function LandingPage() {
         </div>
         <div className="contact-grid">
           <ContactForm />
-        </div>
-            <div className="contact-info-card" style={{marginBottom:"20px"}}>
-              <h3>Informasi Kontak</h3>
-              {[
-                {icon:"📍",label:"ALAMAT",val:"Jl. Monginsidi No. 52, Candirejo, Magetan"},
-                {icon:"📱",label:"WHATSAPP",val:"+62 812-3456-7890"},
-                {icon:"📧",label:"EMAIL",val:"info@iispsm.sch.id"},
-                {icon:"⏰",label:"JAM OPERASIONAL",val:"Senin – Jumat, 07.00 – 16.00"},
-              ].map((info,i)=>(
-                <div className="info-item" key={i}>
-                  <div className="info-icon">{info.icon}</div>
+          <div className="contact-info-card" style={{marginBottom:"20px"}}>
+            <h3>Informasi Kontak</h3>
+            {[
+              {icon:"📍",label:"ALAMAT",val:"Jl. Monginsidi No. 52, Candirejo, Magetan"},
+              {icon:"📱",label:"WHATSAPP",val:"+62 812-3456-7890"},
+              {icon:"📧",label:"EMAIL",val:"info@iispsm.sch.id"},
+              {icon:"⏰",label:"JAM OPERASIONAL",val:"Senin – Jumat, 07.00 – 16.00"},
+            ].map((info,i)=>(
+              <div className="info-item" key={i}>
+                <div className="info-icon">{info.icon}</div>
                   <div>
                     <div className="info-label">{info.label}</div>
                     <div className="info-val">{info.val}</div>
@@ -895,7 +894,6 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-        </div>
       </section>
 
       {/* FOOTER */}
