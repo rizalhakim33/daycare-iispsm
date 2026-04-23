@@ -14,6 +14,22 @@ export const metadata: Metadata = {
     "IIS PSM",
     "sensori integrasi anak"
   ],
+  openGraph: {
+    title: "IIS PSM Daycare & Preschool Magetan | Pendidikan Usia Dini Islami",
+    description: "Pendidikan usia dini dan penitipan anak Islami di Magetan. Membentuk generasi berakhlak mulia dengan metode stimulasi Sensori Integrasi.",
+    url: "https://v0-daycare-iispsm.vercel.app/",
+    siteName: "IIS PSM Daycare & Preschool",
+    images: [
+      {
+        url: "https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/favicon/og_image.png", // Siapkan gambar resolusi 1200x630 px di folder public
+        width: 1200,
+        height: 630,
+        alt: "Kegiatan Belajar di IIS PSM Daycare & Preschool Magetan",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
