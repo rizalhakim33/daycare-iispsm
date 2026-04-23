@@ -125,6 +125,7 @@ export default function LandingPage() {
         .nav-logo{
           width:42px;height:42px;border-radius:50%;
           background-image:url("https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/favicon/favicon.png");
+          background-size:cover;
           display:flex;align-items:center;justify-content:center;
           font-family:'DM Sans',sans-serif;font-weight:700;font-size:14px;color:white;letter-spacing:0.5px;
         }
