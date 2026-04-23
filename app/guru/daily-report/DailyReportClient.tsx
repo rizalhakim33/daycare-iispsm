@@ -158,8 +158,8 @@ export default function DailyReportClient({ siswaList, guruId }: { siswaList: an
         <h3 className="font-semibold text-[#1a3a2a] mb-4">🍽️ Makan & Minum</h3>
         <div className="grid grid-cols-2 gap-3">
           {[
-            { label: "Sarapan", val: sarapan, set: setSarapan, opts: ["Habis","Setengah","Sedikit","Tidak makan"] },
-            { label: "Snack pagi", val: snackPagi, set: setSnackPagi, opts: ["Habis","Setengah","Tidak makan"] },
+            { label: "Sarapan", val: sarapan, set: setSarapan, opts: ["Habis","Sarapan di Rumah","Setengah","Sedikit","Tidak makan"] },
+            { label: "Snack pagi", val: snackPagi, set: setSnackPagi, opts: ["Habis","Snack Pagi di Rumah","Setengah","Tidak makan"] },
             { label: "Makan siang", val: makanSiang, set: setMakanSiang, opts: ["Habis","Setengah","Sedikit","Tidak makan"] },
             { label: "Snack sore", val: snackSore, set: setSnackSore, opts: ["Habis","Setengah","Tidak makan"] },
           ].map(({ label, val, set, opts }) => (
