@@ -1,5 +1,85 @@
 "use client";
 import { useState } from "react";
+import React from "react";
+
+export default function ContactForm() {
+  const handleWhatsAppSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // 1. Ambil data dari form
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      namaAnak: formData.get("namaAnak"),
+      tglLahir: formData.get("tglLahir"),
+      namaOrtu: formData.get("namaOrtu"),
+      wa: formData.get("wa"),
+      program: formData.get("program"),
+      pesan: formData.get("pesan"),
+    };
+
+    // 2. Format pesan (Gunakan * untuk bold di WA)
+    const text = `Halo Admin IIS PSM Magetan, saya ingin mendaftar:\n\n` +
+                 `*Nama Anak:* ${data.namaAnak}\n` +
+                 `*Tanggal Lahir:* ${data.tglLahir}\n` +
+                 `*Nama Ortu:* ${data.namaOrtu}\n` +
+                 `*WA:* ${data.wa}\n` +
+                 `*Program:* ${data.program}\n` +
+                 `*Pesan:* ${data.pesan || "-"}`;
+
+    // 3. Redirect ke WhatsApp (Ganti nomor di bawah dengan nomor admin yang benar)
+    const phone = "6281615784070"; // Kode negara 62 tanpa +
+    const encodedText = encodeURIComponent(text);
+    window.open(`https://wa.me/${phone}?text=${encodedText}`, "_blank");
+  };
+
+  return (
+    <form onSubmit={handleWhatsAppSubmit} className="contact-form-card">
+      <h3>Formulir Pendaftaran</h3>
+      
+      <div className="form-row">
+        <div className="form-group" style={{ margin: 0 }}>
+          <label>Nama Lengkap Anak</label>
+          <input name="namaAnak" type="text" placeholder="Nama anak" required />
+        </div>
+        <div className="form-group" style={{ margin: 0 }}>
+          <label>Tanggal Lahir</label>
+          <input name="tglLahir" type="date" required />
+        </div>
+      </div>
+
+      <div className="form-group">
+        <label>Nama Orang Tua / Wali</label>
+        <input name="namaOrtu" type="text" placeholder="Nama lengkap" required />
+      </div>
+
+      <div className="form-row">
+        <div className="form-group" style={{ margin: 0 }}>
+          <label>Nomor WhatsApp</label>
+          <input name="wa" type="tel" placeholder="08xx-xxxx-xxxx" required />
+        </div>
+        <div className="form-group" style={{ margin: 0 }}>
+          <label>Program Diminati</label>
+          <select name="program" required>
+            <option value="Infant & Toddler Care">Infant & Toddler Care</option>
+            <option value="Playgroup">Playgroup</option>
+            <option value="KB / Preschool 1">KB / Preschool 1</option>
+            <option value="TKA / Preschool 2">TKA / Preschool 2</option>
+            <option value="TK B / Preschool 3">TK B / Preschool 3</option>
+          </select>
+        </div>
+      </div>
+
+      <div className="form-group">
+        <label>Pesan / Pertanyaan</label>
+        <textarea name="pesan" placeholder="Ceritakan kebutuhan atau pertanyaan Anda..." />
+      </div>
+
+      <button type="submit" className="btn-submit">
+        Kirim Formulir Pendaftaran →
+      </button>
+    </form>
+  );
+}
 
 export default function LandingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -787,44 +867,7 @@ export default function LandingPage() {
           <p className="sec-desc" style={{margin:"0 auto 56px"}}>Isi formulir berikut dan tim kami akan menghubungi Anda dalam 1x24 jam.</p>
         </div>
         <div className="contact-grid">
-          <div className="contact-form-card">
-            <h3>Formulir Pendaftaran</h3>
-            <div className="form-row">
-              <div className="form-group" style={{margin:0}}>
-                <label>Nama Lengkap Anak</label>
-                <input type="text" placeholder="Nama anak" />
-              </div>
-              <div className="form-group" style={{margin:0}}>
-                <label>Tanggal Lahir</label>
-                <input type="date" />
-              </div>
-            </div>
-            <div className="form-group">
-              <label>Nama Orang Tua / Wali</label>
-              <input type="text" placeholder="Nama lengkap" />
-            </div>
-            <div className="form-row">
-              <div className="form-group" style={{margin:0}}>
-                <label>Nomor WhatsApp</label>
-                <input type="tel" placeholder="08xx-xxxx-xxxx" />
-              </div>
-              <div className="form-group" style={{margin:0}}>
-                <label>Program Diminati</label>
-                <select>
-                  <option>Infant & Toddler Care</option>
-                  <option>Playgroup</option>
-                  <option>KB / Preschool 1</option>
-                  <option>TKA / Preschool 2</option>
-                  <option>TK B / Preschool 3</option>
-                </select>
-              </div>
-            </div>
-            <div className="form-group">
-              <label>Pesan / Pertanyaan</label>
-              <textarea placeholder="Ceritakan kebutuhan atau pertanyaan Anda..." />
-            </div>
-            <button className="btn-submit">Kirim Formulir Pendaftaran →</button>
-          </div>
+          <ContactForm />
           <div>
             <div className="contact-info-card" style={{marginBottom:"20px"}}>
               <h3>Informasi Kontak</h3>
