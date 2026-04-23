@@ -1,5 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { DM_Sans, Cormorant_Garamond } from "next/font/google";
+
+// Konfigurasi font
+const dmSans = DM_Sans({ 
+  subsets: ["latin"],
+  weight: ["400", "500", "700"] 
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"]
+});
 
 export const metadata: Metadata = {
   title: "IIS PSM Daycare & Preschool Magetan | Pendidikan Usia Dini Islami",
