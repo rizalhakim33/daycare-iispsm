@@ -2,11 +2,11 @@
 import { useState } from "react";
 import React from "react";
 
-export default function ContactForm() {
+// 1. Definisikan ContactForm di luar (Top-Level)
+function ContactForm() {
   const handleWhatsAppSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // 1. Ambil data dari form
     const formData = new FormData(e.currentTarget);
     const data = {
       namaAnak: formData.get("namaAnak"),
@@ -17,7 +17,6 @@ export default function ContactForm() {
       pesan: formData.get("pesan"),
     };
 
-    // 2. Format pesan (Gunakan * untuk bold di WA)
     const text = `Halo Admin IIS PSM Magetan, saya ingin mendaftar:\n\n` +
                  `*Nama Anak:* ${data.namaAnak}\n` +
                  `*Tanggal Lahir:* ${data.tglLahir}\n` +
@@ -26,8 +25,7 @@ export default function ContactForm() {
                  `*Program:* ${data.program}\n` +
                  `*Pesan:* ${data.pesan || "-"}`;
 
-    // 3. Redirect ke WhatsApp (Ganti nomor di bawah dengan nomor admin yang benar)
-    const phone = "6281615784070"; // Kode negara 62 tanpa +
+    const phone = "6281615784070"; 
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/${phone}?text=${encodedText}`, "_blank");
   };
