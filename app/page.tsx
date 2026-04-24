@@ -177,12 +177,12 @@ const FitrahKurikulum = () => {
               key={idx} 
               className={`group relative p-6 rounded-3xl border transition-all duration-300 hover:shadow-xl hover:-translate-y-1 fitrah-card`}
             >
-              <div className="flex items-center gap-4 mb-5">
+              <div className="flex items-center gap-2 mb-5">
                 <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-white shadow-sm text-2xl">
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="fc-name">{item.title}</h3>
+                  <div className="fc-name">{item.title}</div>
                   <p className="fc-tagline">
                     {item.tagline}
                   </p>
