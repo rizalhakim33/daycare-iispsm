@@ -101,7 +101,6 @@ const FitrahKurikulum = () => {
       tagline: 'Atmosfir Keshalihan & Keteladanan',
       desc: "Menanamkan cinta kepada Allah, Rasul, Al-Qur'an, dan Islam melalui imaji positif & keteladanan — bukan doktrin ketakutan.",
       list: ["Kisah Rasulullah & surga", "Kenalkan Allah di setiap peristiwa", "Doa di awal aktivitas", "Gunakan imaji positif"],
-      color: 'bg-emerald-50 border-emerald-100 text-emerald-900'
     },
     {
       icon: '🧠',
@@ -109,7 +108,6 @@ const FitrahKurikulum = () => {
       tagline: 'Art of Discovery',
       desc: 'Menumbuhkan perasaan belajar melalui eksplorasi langsung dan stimulasi psikomotorik di alam.',
       list: ["Eksplorasi tubuh & keluarga", "Inspirasi belajar di alam", "Buku bersastra indah", "Dorong abstraksi & imajinasi"],
-      color: 'bg-blue-50 border-blue-100 text-blue-900'
     },
     {
       icon: '⭐',
@@ -117,7 +115,6 @@ const FitrahKurikulum = () => {
       tagline: 'Mengamati Sifat Unik',
       desc: 'Setiap anak adalah pemimpin. Sifat unik diamati dan dikuatkan dengan label positif sejak dini.',
       list: ["Pelihara hewan & tumbuhan", "Label positif (sang orator)", "Hargai adab & akhlak", "Peran sesuai bakat"],
-      color: 'bg-amber-50 border-amber-100 text-amber-900'
     },
     {
       icon: '❤️',
@@ -125,7 +122,6 @@ const FitrahKurikulum = () => {
       tagline: 'Identitas Gender',
       desc: 'Menguatkan identitas gender melalui kelekatan aman antara anak dengan Ayah dan Bunda.',
       list: ["ASI penuh cinta", "Bermain peran Ayah/Bunda", "Konsep cowok & cewek", "Ajarkan thaharah & malu"],
-      color: 'bg-rose-50 border-rose-100 text-rose-900'
     },
     {
       icon: '🌿',
@@ -133,7 +129,6 @@ const FitrahKurikulum = () => {
       tagline: 'Apresiasi Keindahan',
       desc: 'Menguatkan rasa keindahan melalui inderawi (0-2th) dan imajinasi/ekspresi (2-6th).',
       list: ["Sastra & cerita indah", "Bacakan Kitabullah", "Bebas coretan & lukisan", "Bukan paksa akademik"],
-      color: 'bg-green-50 border-green-100 text-green-900'
     },
     {
       icon: '🤝',
@@ -141,7 +136,6 @@ const FitrahKurikulum = () => {
       tagline: 'Ego Sentris Sehat',
       desc: 'Interaksi sosial sehat melalui bermain dan contoh adab, bukan kepatuhan berbasis takut.',
       list: ["Puasakan masa ego sentris", "Bangun rutinitas cerita", "Label milik privasi", "Suplai ego dari Ayah"],
-      color: 'bg-indigo-50 border-indigo-100 text-indigo-900'
     },
     {
       icon: '🍽️',
@@ -149,7 +143,6 @@ const FitrahKurikulum = () => {
       tagline: 'Pola Hidup Fitri',
       desc: 'Pola makan halal-thayyib, tidur fitri, dan gerak aktif untuk stimulasi sensori integrasi.',
       list: ["Makan halal-thayyib", "Tidur cukup sesuai usia", "Gerak aktif & sensorik", "Sensori integrasi 4 level"],
-      color: 'bg-orange-50 border-orange-100 text-orange-900'
     },
     {
       icon: '🕌',
@@ -157,7 +150,6 @@ const FitrahKurikulum = () => {
       tagline: 'Keteladanan Nyata',
       desc: 'Adab ditanamkan melalui keteladanan orang tua, sehingga anak mencintai keindahan akhlak.',
       list: ["Guru sebagai teladan", "Imaji adab yang indah", "Adab makan & belajar", "Sikap nyata harian"],
-      color: 'bg-cyan-50 border-cyan-100 text-cyan-900'
     }
   ];
 
@@ -166,7 +158,7 @@ const FitrahKurikulum = () => {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-blue-600 bg-blue-50 rounded-full uppercase">
+          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest rounded-full uppercase">
             Kurikulum Holistik
           </span>
           <h2 className="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
@@ -174,7 +166,7 @@ const FitrahKurikulum = () => {
           </h2>
           <p className="max-w-2xl mx-auto text-lg text-slate-600 leading-relaxed">
             Stimulasi holistik sesuai tahapan tumbuh kembang usia dini. Setiap kegiatan dirancang 
-            <span className="italic font-medium text-blue-600"> Learning Through Living</span> — bermain adalah belajar.
+            <span className="italic font-medium"> Learning Through Living</span> — bermain adalah belajar.
           </p>
         </div>
 
