@@ -158,20 +158,20 @@ const FitrahKurikulum = () => {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest rounded-full uppercase">
+          <span className="sec-label">
             Kurikulum Holistik
           </span>
-          <h2 className="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
+          <h2 className="sec-title">
             8 Aspek Fitrah
           </h2>
-          <p className="max-w-2xl mx-auto text-lg text-slate-600 leading-relaxed">
+          <p className="sec-desc">
             Stimulasi holistik sesuai tahapan tumbuh kembang usia dini. Setiap kegiatan dirancang 
             <span className="italic font-medium"> Learning Through Living</span> — bermain adalah belajar.
           </p>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 fitrah-card">
           {kurikulumData.map((item, idx) => (
             <div 
               key={idx} 
