@@ -182,25 +182,27 @@ const FitrahKurikulum = () => {
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="font-bold text-base leading-none mb-1">{item.title}</h3>
-                  <p className="text-[10px] font-bold opacity-60 uppercase tracking-tighter">
+                  <h3 className="fc-name">{item.title}</h3>
+                  <p className="fc-tagline">
                     {item.tagline}
                   </p>
                 </div>
               </div>
-              
-              <p className="text-sm leading-relaxed mb-6 opacity-90 font-medium">
+              <div className="fc-body">
+                <p className="text-sm leading-relaxed mb-6 opacity-90 font-medium">
                 {item.desc}
               </p>
               
-              <ul className="space-y-2.5">
+              <ul className="fc-list">
                 {item.list.map((point, pIdx) => (
-                  <li key={pIdx} className="flex items-start gap-2 text-[13px] opacity-80">
+                  <li key={pIdx} >
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-current shrink-0" />
                     <span>{point}</span>
                   </li>
                 ))}
               </ul>
+              </div>
+              
             </div>
           ))}
         </div>
