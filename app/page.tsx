@@ -93,6 +93,160 @@ function ContactForm() {
   );
 }
 
+const FitrahKurikulum = () => {
+  const kurikulumData = [
+    {
+      icon: '☪️',
+      title: 'Fitrah Keimanan',
+      tagline: 'Atmosfir Keshalihan & Keteladanan',
+      desc: "Menanamkan cinta kepada Allah, Rasul, Al-Qur'an, dan Islam melalui imaji positif & keteladanan — bukan doktrin ketakutan.",
+      list: ["Kisah Rasulullah & surga", "Kenalkan Allah di setiap peristiwa", "Doa di awal aktivitas", "Gunakan imaji positif"],
+      color: 'bg-emerald-50 border-emerald-100 text-emerald-900'
+    },
+    {
+      icon: '🧠',
+      title: 'Fitrah Belajar',
+      tagline: 'Art of Discovery',
+      desc: 'Menumbuhkan perasaan belajar melalui eksplorasi langsung dan stimulasi psikomotorik di alam.',
+      list: ["Eksplorasi tubuh & keluarga", "Inspirasi belajar di alam", "Buku bersastra indah", "Dorong abstraksi & imajinasi"],
+      color: 'bg-blue-50 border-blue-100 text-blue-900'
+    },
+    {
+      icon: '⭐',
+      title: 'Fitrah Bakat',
+      tagline: 'Mengamati Sifat Unik',
+      desc: 'Setiap anak adalah pemimpin. Sifat unik diamati dan dikuatkan dengan label positif sejak dini.',
+      list: ["Pelihara hewan & tumbuhan", "Label positif (sang orator)", "Hargai adab & akhlak", "Peran sesuai bakat"],
+      color: 'bg-amber-50 border-amber-100 text-amber-900'
+    },
+    {
+      icon: '❤️',
+      title: 'Fitrah Seksualitas',
+      tagline: 'Identitas Gender',
+      desc: 'Menguatkan identitas gender melalui kelekatan aman antara anak dengan Ayah dan Bunda.',
+      list: ["ASI penuh cinta", "Bermain peran Ayah/Bunda", "Konsep cowok & cewek", "Ajarkan thaharah & malu"],
+      color: 'bg-rose-50 border-rose-100 text-rose-900'
+    },
+    {
+      icon: '🌿',
+      title: 'Fitrah Bahasa',
+      tagline: 'Apresiasi Keindahan',
+      desc: 'Menguatkan rasa keindahan melalui inderawi (0-2th) dan imajinasi/ekspresi (2-6th).',
+      list: ["Sastra & cerita indah", "Bacakan Kitabullah", "Bebas coretan & lukisan", "Bukan paksa akademik"],
+      color: 'bg-green-50 border-green-100 text-green-900'
+    },
+    {
+      icon: '🤝',
+      title: 'Fitrah Sosial',
+      tagline: 'Ego Sentris Sehat',
+      desc: 'Interaksi sosial sehat melalui bermain dan contoh adab, bukan kepatuhan berbasis takut.',
+      list: ["Puasakan masa ego sentris", "Bangun rutinitas cerita", "Label milik privasi", "Suplai ego dari Ayah"],
+      color: 'bg-indigo-50 border-indigo-100 text-indigo-900'
+    },
+    {
+      icon: '🍽️',
+      title: 'Fitrah Jasmani',
+      tagline: 'Pola Hidup Fitri',
+      desc: 'Pola makan halal-thayyib, tidur fitri, dan gerak aktif untuk stimulasi sensori integrasi.',
+      list: ["Makan halal-thayyib", "Tidur cukup sesuai usia", "Gerak aktif & sensorik", "Sensori integrasi 4 level"],
+      color: 'bg-orange-50 border-orange-100 text-orange-900'
+    },
+    {
+      icon: '🕌',
+      title: 'Adab & Akhlak',
+      tagline: 'Keteladanan Nyata',
+      desc: 'Adab ditanamkan melalui keteladanan orang tua, sehingga anak mencintai keindahan akhlak.',
+      list: ["Guru sebagai teladan", "Imaji adab yang indah", "Adab makan & belajar", "Sikap nyata harian"],
+      color: 'bg-cyan-50 border-cyan-100 text-cyan-900'
+    }
+  ];
+
+  return (
+      <section className="max-w-7xl mx-auto" id="kurikulum">
+        
+        {/* Header */}
+        <div className="text-center mb-16">
+          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-blue-600 bg-blue-50 rounded-full uppercase">
+            Kurikulum Holistik
+          </span>
+          <h2 className="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
+            8 Aspek Fitrah
+          </h2>
+          <p className="max-w-2xl mx-auto text-lg text-slate-600 leading-relaxed">
+            Stimulasi holistik sesuai tahapan tumbuh kembang usia dini. Setiap kegiatan dirancang 
+            <span className="italic font-medium text-blue-600"> Learning Through Living</span> — bermain adalah belajar.
+          </p>
+        </div>
+
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {kurikulumData.map((item, idx) => (
+            <div 
+              key={idx} 
+              className={`group relative p-6 rounded-3xl border transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${item.color}`}
+            >
+              <div className="flex items-center gap-4 mb-5">
+                <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-white shadow-sm text-2xl">
+                  {item.icon}
+                </div>
+                <div>
+                  <h3 className="font-bold text-base leading-none mb-1">{item.title}</h3>
+                  <p className="text-[10px] font-bold opacity-60 uppercase tracking-tighter">
+                    {item.tagline}
+                  </p>
+                </div>
+              </div>
+              
+              <p className="text-sm leading-relaxed mb-6 opacity-90 font-medium">
+                {item.desc}
+              </p>
+              
+              <ul className="space-y-2.5">
+                {item.list.map((point, pIdx) => (
+                  <li key={pIdx} className="flex items-start gap-2 text-[13px] opacity-80">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-current shrink-0" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Footer Timeline */}
+        <div className="mt-20 overflow-hidden relative p-8 md:p-12 bg-slate-900 rounded-[2.5rem] text-center text-white shadow-2xl shadow-slate-200">
+          <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-400 via-transparent to-transparent" />
+          
+          <p className="relative z-10 text-xl md:text-2xl font-medium italic mb-8 text-slate-100">
+            "Perkembangan manusia memiliki sunnatullah — ada tahapan, ada masa emas bagi setiap fitrah."
+          </p>
+          
+          <div className="relative z-10 flex flex-wrap justify-center items-center gap-3">
+            <span className="text-sm text-slate-400 font-semibold uppercase tracking-widest mr-2">Tahapan:</span>
+            {[
+              "0-2 thn",
+              "2-6 thn (Pra Latih)",
+              "7-10 thn",
+              "11-14 thn",
+              ">15 thn"
+            ].map((tag, tIdx) => (
+              <span 
+                key={tIdx} 
+                className={`px-4 py-2 rounded-xl text-sm font-bold transition-colors ${
+                  tag.includes('Pra Latih') 
+                  ? 'bg-blue-600 text-white shadow-lg shadow-blue-900/20' 
+                  : 'bg-white/10 text-slate-300'
+                }`}
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+  );
+};
+
 export default function LandingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -407,7 +561,120 @@ export default function LandingPage() {
           transition:all .2s;
         }
         .btn-green:hover{background:var(--green-mid)}
+        /* ── FITRAH KURIKULUM SECTION ── */
+.fitrah-kurikulum-section {
+  background: #f9f6f0;
+  padding: 96px 64px;
+}
+.fitrah-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.fitrah-card {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 24px 20px;
+  border: 1.5px solid var(--green-border);
+  transition: transform 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.fitrah-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(26,58,42,0.10);
+}
+/* Color accent per card */
+.fc-keimanan { border-top: 3px solid #3d7a52; }
+.fc-belajar  { border-top: 3px solid #5a8fd6; }
+.fc-bakat    { border-top: 3px solid #d4a843; }
+.fc-seksualitas { border-top: 3px solid #e07a8a; }
+.fc-bahasa   { border-top: 3px solid #7ac47a; }
+.fc-sosial   { border-top: 3px solid #d68c5a; }
+.fc-jasmani  { border-top: 3px solid #5ab4d6; }
+.fc-adab     { border-top: 3px solid #9b6ed6; }
 
+.fc-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.fc-icon {
+  font-size: 26px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.fc-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--green-dark);
+  line-height: 1.3;
+  margin-bottom: 3px;
+}
+.fc-tagline {
+  font-size: 11px;
+  color: var(--gold-dark);
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.3;
+}
+.fc-body p {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+.fc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+}
+.fc-list li {
+  font-size: 12px;
+  color: var(--muted);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.5;
+}
+.fc-list li::before {
+  content: '●';
+  color: var(--gold);
+  font-size: 7px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.fitrah-quote-bar {
+  background: var(--green-dark);
+  border-radius: 14px;
+  padding: 28px 40px;
+  text-align: center;
+  color: white;
+}
+.fitrah-quote-bar p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: rgba(255,255,255,0.95);
+}
+.fitrah-quote-bar span {
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.3px;
+}
+@media (max-width: 1200px) {
+  .fitrah-cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .fitrah-cards-grid { grid-template-columns: 1fr; }
+  .fitrah-kurikulum-section { padding: 64px 24px; }
         /* ── FACILITIES ── */
         .facilities-section{background:var(--cream2)}
         .fac-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
@@ -815,6 +1082,8 @@ export default function LandingPage() {
           <button className="btn-green" onClick={() => scrollTo("contact")}>Pelajari Lebih Lanjut →</button>
         </div>
       </section>
+      {/* 8 ASPEK FITRAH - KURIKULUM HOLISTIK */}
+      <FitrahKurikulum />
 
       {/* FACILITIES */}
       <section className="facilities-section" id="facilities">
