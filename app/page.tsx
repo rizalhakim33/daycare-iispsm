@@ -177,7 +177,7 @@ const FitrahKurikulum = () => {
               key={idx} 
               className={`group relative p-6 rounded-3xl border transition-all duration-300 hover:shadow-xl hover:-translate-y-1 fitrah-card`}
             >
-              <div className="flex items-center gap-2 mb-5">
+              <div className="flex items-center gap-2">
                 <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-white shadow-sm text-2xl">
                   {item.icon}
                 </div>
@@ -189,7 +189,7 @@ const FitrahKurikulum = () => {
                 </div>
               </div>
               <div className="fc-body">
-                <p className="text-sm leading-relaxed mb-6 opacity-90 font-medium">
+                <p>
                 {item.desc}
               </p>
               
@@ -663,13 +663,7 @@ export default function LandingPage() {
   color: rgba(255,255,255,0.6);
   letter-spacing: 0.3px;
 }
-@media (max-width: 1200px) {
-  .fitrah-cards-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 640px) {
-  .fitrah-cards-grid { grid-template-columns: 1fr; }
-  .fitrah-kurikulum-section { padding: 64px 24px; }
-        /* ── FACILITIES ── */
+/* ── FACILITIES ── */
         .facilities-section{background:var(--cream2)}
         .fac-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
         .fac-items{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
@@ -893,6 +887,14 @@ export default function LandingPage() {
 
           footer{padding:24px 20px;flex-direction:column;align-items:flex-start}
           footer .f-copy{text-align:left}
+        
+@media (max-width: 1200px) {
+  .fitrah-cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .fitrah-cards-grid { grid-template-columns: 1fr; }
+  .fitrah-kurikulum-section { padding: 64px 24px; }
+        
         }
 
         @media(max-width:480px){
