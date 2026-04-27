@@ -504,7 +504,7 @@ section { padding: 96px 64px }
   display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; margin-bottom: 40px;
 }
 .fitrah-card {
-  background: var(--white); border-radius: 14px; padding: 24px 20px;
+  background: white; border-radius: 14px; padding: 24px 20px;
   border: 1.5px solid var(--green-border); transition: transform .25s, box-shadow .25s;
   display: flex; flex-direction: column; gap: 14px;
 }
