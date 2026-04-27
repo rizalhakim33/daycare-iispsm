@@ -208,10 +208,10 @@ const FitrahKurikulum = () => {
         </div>
 
         {/* Footer Timeline */}
-        <div class="fitrah-quote-bar">
-    <p>"Perkembangan manusia memiliki sunnatullah — ada tahapan, ada masa emas bagi setiap fitrah."</p>
-    <span>Tahapan: 0-2 thn · 2-6 thn (Pra Latih) · 7-10 thn (Pra Aqil Baligh 1) · 11-14 thn (Pra Aqil Baligh 2) · &gt;15 thn (Post Aqil Baligh)</span>
-  </div>
+        <div className="fitrah-quote-bar">
+          <p>"Perkembangan manusia memiliki sunnatullah — ada tahapan, ada masa emas bagi setiap fitrah."</p>
+          <span>Tahapan: 0-2 thn · 2-6 thn (Pra Latih) · 7-10 thn (Pra Aqil Baligh 1) · 11-14 thn (Pra Aqil Baligh 2) · &gt;15 thn (Post Aqil Baligh)</span>
+        </div>
       </section>
   );
 };
