@@ -419,7 +419,7 @@ section { padding: 96px 64px }
 .doe-desc  { text-align: center; color: #5a5a5a; font-size: 15px; margin-bottom: 40px }
 .doe-grid  { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap }
 .doe-card {
-  background: var(--white); border: 1px solid var(--green-border);
+  background: white; border: 1px solid var(--green-border);
   border-radius: var(--radius); padding: 24px 20px;
   text-align: center; width: 140px; transition: all .25s;
 }
@@ -432,7 +432,7 @@ section { padding: 96px 64px }
 .programs-section { background: var(--cream2) }
 .programs-grid { display: flex; gap: 20px; overflow-x: auto; padding-bottom: 8px }
 .prog-card {
-  flex: 0 0 240px; background: var(--white); border-radius: var(--radius-lg);
+  flex: 0 0 240px; background: white; border-radius: var(--radius-lg);
   padding: 28px 24px; border: 2px solid transparent;
   transition: all .3s; cursor: pointer; position: relative;
 }
@@ -590,7 +590,7 @@ section { padding: 96px 64px }
 .contact-section { background: var(--cream2) }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start }
 .contact-form-card {
-  background: var(--white); border-radius: var(--radius-lg);
+  background: white; border-radius: var(--radius-lg);
   padding: 36px 32px; border: 1px solid var(--green-border);
 }
 .contact-form-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; margin-bottom: 24px }
