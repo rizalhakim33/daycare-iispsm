@@ -208,35 +208,10 @@ const FitrahKurikulum = () => {
         </div>
 
         {/* Footer Timeline */}
-        <div className="mt-20 overflow-hidden relative p-8 md:p-12 bg-slate-900 rounded-[2.5rem] text-center text-white shadow-2xl shadow-slate-200">
-          <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-400 via-transparent to-transparent" />
-          
-          <p className="relative z-10 text-xl md:text-2xl font-medium italic mb-8 text-slate-100">
-            "Perkembangan manusia memiliki sunnatullah — ada tahapan, ada masa emas bagi setiap fitrah."
-          </p>
-          
-          <div className="relative z-10 flex flex-wrap justify-center items-center gap-3">
-            <span className="text-sm text-slate-400 font-semibold uppercase tracking-widest mr-2">Tahapan:</span>
-            {[
-              "0-2 thn",
-              "2-6 thn (Pra Latih)",
-              "7-10 thn",
-              "11-14 thn",
-              ">15 thn"
-            ].map((tag, tIdx) => (
-              <span 
-                key={tIdx} 
-                className={`px-4 py-2 rounded-xl text-sm font-bold transition-colors ${
-                  tag.includes('Pra Latih') 
-                  ? 'bg-blue-600 text-white shadow-lg shadow-blue-900/20' 
-                  : 'bg-white/10 text-slate-300'
-                }`}
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
+        <div class="fitrah-quote-bar">
+    <p>"Perkembangan manusia memiliki sunnatullah — ada tahapan, ada masa emas bagi setiap fitrah."</p>
+    <span>Tahapan: 0-2 thn · 2-6 thn (Pra Latih) · 7-10 thn (Pra Aqil Baligh 1) · 11-14 thn (Pra Aqil Baligh 2) · &gt;15 thn (Post Aqil Baligh)</span>
+  </div>
       </section>
   );
 };
