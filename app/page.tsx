@@ -576,7 +576,7 @@ section { padding: 96px 64px }
 }
 .fac-img-placeholder {
   width: 100%; height: 100%;
-  background-image: url("https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/portofolio/c2568347-25cf-4647-8ac4-397723dc668a/1776917994395.png");
+  background-image: url("https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/gallery/facilities.jpg");
   background-size: cover;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   color: rgba(255,255,255,.4); font-size: 48px;
@@ -1039,10 +1039,24 @@ footer .f-copy  { font-size: 12px; color: rgba(255,255,255,.45); text-align: rig
           <p className="sec-desc" style={{margin:"0 auto 40px"}}>Sekilas suasana belajar, bermain, dan bertumbuh bersama di IIS PSM Daycare &amp; Preschool.</p>
         </div>
         <div className="gallery-grid">
-          {["🎨","🌿","📚","🤲","🎵","🏃","☪️","🍽️","⭐","🎓"].map((e,i)=>(
-            <div className="gallery-item" key={i}>{e}</div>
-          ))}
-        </div>
+  {[
+    "https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/gallery/gallery1.jpg",
+    "https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/gallery/gallery2.jpg",
+    "https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/gallery/gallery3.jpg",
+    "https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/gallery/gallery4.jpg",
+    "https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/gallery/gallery5.jpg",
+    "https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/gallery/gallery6.jpg",
+    "https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/gallery/gallery7.jpg",
+    "https://dwmpoeqjjrpqdruanhxi.supabase.co/storage/v1/object/public/gallery/gallery8.jpg", 
+  ].map((base64String, i) => (
+    <div className="gallery-item" key={i}>
+      <img 
+        src={base64String} 
+        alt={`Gallery item ${i + 1}`}
+      />
+    </div>
+  ))}
+</div>
       </section>
 
       {/* CONTACT */}
