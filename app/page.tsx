@@ -890,10 +890,6 @@ footer .f-copy  { font-size: 12px; color: rgba(255,255,255,.45); text-align: rig
               <div className="hero-stat-num">5</div>
               <div className="hero-stat-label">Program Tersedia</div>
             </div>
-            <div className="hero-stat">
-              <div className="hero-stat-num">1:5</div>
-              <div className="hero-stat-label">Rasio Guru–Murid</div>
-            </div>
           </div>
         </div>
       </div>
