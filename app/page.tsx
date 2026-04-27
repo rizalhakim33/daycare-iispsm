@@ -763,7 +763,6 @@ footer .f-copy  { font-size: 12px; color: rgba(255,255,255,.45); text-align: rig
   .gut-brain { flex-direction: column; gap: 16px }
 
   .fac-grid { grid-template-columns: 1fr }
-  .fac-right { display: none }
   .fac-items { grid-template-columns: 1fr }
 
   .gallery-grid { grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(5,140px) }
