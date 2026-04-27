@@ -175,7 +175,7 @@ const FitrahKurikulum = () => {
           {kurikulumData.map((item, idx) => (
             <div 
               key={idx} 
-              className={`group relative p-6 rounded-3xl border transition-all duration-300 hover:shadow-xl hover:-translate-y-1 fitrah-card`}
+              className={`fitrah-card`}
             >
               <div className="flex items-center gap-2">
                 <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-white shadow-sm text-2xl">
