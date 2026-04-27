@@ -177,8 +177,8 @@ const FitrahKurikulum = () => {
               key={idx} 
               className={`fitrah-card`}
             >
-              <div className="flex items-center gap-2">
-                <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-white shadow-sm text-2xl">
+              <div className="fc-header">
+                <div className="fc-icon">
                   {item.icon}
                 </div>
                 <div>
