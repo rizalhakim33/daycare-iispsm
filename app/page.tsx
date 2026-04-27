@@ -154,10 +154,10 @@ const FitrahKurikulum = () => {
   ];
 
   return (
-      <section className="max-w-7xl mx-auto" id="kurikulum">
+      <section className="fitrah-kurikulum-section" id="kurikulum">
         
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="sec-header center">
           <span className="sec-label">
             Kurikulum Holistik
           </span>
@@ -246,9 +246,9 @@ nav {
   font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 14px; color: white;
 }
 .nav-name { font-weight: 600; font-size: 15px; color: var(--green-dark); line-height: 1.2 }
-.nav-sub  { font-size: 11px; color: var(--muted) }
+.nav-sub  { font-size: 11px; color: #5a5a5a }
 .nav-links { list-style: none; display: flex; gap: 32px }
-.nav-links a { text-decoration: none; font-size: 14px; color: var(--muted); font-weight: 400; transition: color .2s }
+.nav-links a { text-decoration: none; font-size: 14px; color: #5a5a5a; font-weight: 400; transition: color .2s }
 .nav-links a:hover { color: var(--green-dark) }
 .nav-right { display: flex; align-items: center; gap: 12px }
 
@@ -392,7 +392,7 @@ nav {
 section { padding: 96px 64px }
 .sec-label { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px }
 .sec-title { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 700; line-height: 1.15; margin-bottom: 16px; color: var(--text) }
-.sec-desc  { font-size: 16px; color: var(--muted); line-height: 1.75; max-width: 600px }
+.sec-desc  { font-size: 16px; color: #5a5a5a; line-height: 1.75; max-width: 600px }
 .sec-header { margin-bottom: 56px }
 .sec-header.center { text-align: center }
 .sec-header.center .sec-desc { margin: 0 auto }
@@ -416,7 +416,7 @@ section { padding: 96px 64px }
 }
 .doe-label { text-align: center; margin-bottom: 8px }
 .doe-title { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 12px }
-.doe-desc  { text-align: center; color: var(--muted); font-size: 15px; margin-bottom: 40px }
+.doe-desc  { text-align: center; color: #5a5a5a; font-size: 15px; margin-bottom: 40px }
 .doe-grid  { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap }
 .doe-card {
   background: var(--white); border: 1px solid var(--green-border);
@@ -426,7 +426,7 @@ section { padding: 96px 64px }
 .doe-card:hover { border-color: var(--green-mid); transform: translateY(-4px); box-shadow: 0 12px 28px rgba(26,58,42,.1) }
 .doe-icon { font-size: 32px; margin-bottom: 10px }
 .doe-name  { font-weight: 600; font-size: 14px; color: var(--green-dark); margin-bottom: 4px }
-.doe-sub   { font-size: 12px; color: var(--muted) }
+.doe-sub   { font-size: 12px; color: #5a5a5a }
 
 /* ── PROGRAMS ── */
 .programs-section { background: var(--cream2) }
@@ -447,9 +447,9 @@ section { padding: 96px 64px }
 .prog-age-badge.orange { background: #fdf0e0; color: #8a4a00 }
 .prog-icon { font-size: 36px; margin-bottom: 14px }
 .prog-name { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; margin-bottom: 10px; color: var(--green-dark) }
-.prog-desc { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 16px }
+.prog-desc { font-size: 13px; color: #5a5a5a; line-height: 1.6; margin-bottom: 16px }
 .prog-list { list-style: none }
-.prog-list li { font-size: 13px; color: var(--muted); padding: 4px 0; display: flex; align-items: flex-start; gap: 8px }
+.prog-list li { font-size: 13px; color: #5a5a5a; padding: 4px 0; display: flex; align-items: flex-start; gap: 8px }
 .prog-list li::before { content: '●'; color: var(--gold); font-size: 8px; margin-top: 6px; flex-shrink: 0 }
 
 /* ── SENSORI ── */
@@ -489,7 +489,7 @@ section { padding: 96px 64px }
   display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
 }
 .gut-brain .text-part h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; margin-bottom: 6px }
-.gut-brain .text-part p  { font-size: 14px; color: var(--muted); max-width: 600px; line-height: 1.6 }
+.gut-brain .text-part p  { font-size: 14px; color: #5a5a5a; max-width: 600px; line-height: 1.6 }
 .btn-green {
   background: var(--green-dark); color: white; border: none;
   padding: 12px 24px; border-radius: 24px;
@@ -521,10 +521,10 @@ section { padding: 96px 64px }
 .fc-icon   { font-size: 26px; flex-shrink: 0; margin-top: 2px }
 .fc-name   { font-weight: 700; font-size: 14px; color: var(--green-dark); line-height: 1.3; margin-bottom: 3px }
 .fc-tagline { font-size: 11px; color: var(--gold-dark); font-weight: 500; font-style: italic; line-height: 1.3 }
-.fc-body p { font-size: 12.5px; color: var(--muted); line-height: 1.65; margin-bottom: 10px }
+.fc-body p { font-size: 12.5px; color: #5a5a5a; line-height: 1.65; margin-bottom: 10px }
 .fc-list   { list-style: none; display: flex; flex-direction: column; gap: 6px; padding: 0; margin: 0 }
 .fc-list li {
-  font-size: 12px; color: var(--muted); padding-left: 14px; position: relative; line-height: 1.5;
+  font-size: 12px; color: #5a5a5a; padding-left: 14px; position: relative; line-height: 1.5;
 }
 .fc-list li::before { content: '●'; color: var(--gold); font-size: 7px; position: absolute; left: 0; top: 5px }
 .fitrah-quote-bar { background: var(--green-dark); border-radius: 14px; padding: 28px 40px; text-align: center; color: white }
@@ -543,7 +543,7 @@ section { padding: 96px 64px }
   font-size: 18px; flex-shrink: 0;
 }
 .fac-item-title { font-weight: 600; font-size: 14px; color: var(--green-dark); margin-bottom: 4px }
-.fac-item-desc  { font-size: 12px; color: var(--muted); line-height: 1.5 }
+.fac-item-desc  { font-size: 12px; color: #5a5a5a; line-height: 1.5 }
 .fac-right { position: relative }
 .fac-img-box {
   width: 100%; aspect-ratio: 4/5; background: var(--green-dark); border-radius: var(--radius-lg);
@@ -570,7 +570,7 @@ section { padding: 96px 64px }
   padding: 14px 18px; box-shadow: 0 8px 30px rgba(0,0,0,.12);
 }
 .safe-badge .num   { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; color: var(--green-dark) }
-.safe-badge .label { font-size: 11px; color: var(--muted) }
+.safe-badge .label { font-size: 11px; color: #5a5a5a }
 
 /* ── GALLERY ── */
 .gallery-section { background: var(--cream) }
@@ -596,7 +596,7 @@ section { padding: 96px 64px }
 .contact-form-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; margin-bottom: 24px }
 .form-row   { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px }
 .form-group { margin-bottom: 16px }
-.form-group label { display: block; font-size: 13px; font-weight: 500; color: var(--muted); margin-bottom: 6px }
+.form-group label { display: block; font-size: 13px; font-weight: 500; color: #5a5a5a; margin-bottom: 6px }
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -631,7 +631,7 @@ section { padding: 96px 64px }
 .info-val   { font-size: 14px; font-weight: 500 }
 .open-house { background: var(--cream); border-radius: var(--radius); padding: 24px; margin-top: 0 }
 .open-house h4 { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 700; margin-bottom: 6px }
-.open-house p  { font-size: 13px; color: var(--muted); margin-bottom: 16px; line-height: 1.5 }
+.open-house p  { font-size: 13px; color: #5a5a5a; margin-bottom: 16px; line-height: 1.5 }
 .open-house-btns { display: flex; gap: 10px; flex-wrap: wrap }
 .btn-sm-dark {
   background: var(--green-dark); color: white; border: none;
