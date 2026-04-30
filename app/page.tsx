@@ -974,12 +974,12 @@ footer .f-copy  { font-size: 12px; color: rgba(255,255,255,.45); text-align: rig
             </div>
             <div className="fac-items">
               {[
-                {icon:"🌿",title:"Taman Eksplorasi Alam",desc:"Area outdoor dengan tanaman, pasir, dan bahan alam untuk stimulasi sensorik."},
-                {icon:"📚",title:"Ruang Baca & Literasi",desc:"Perpustakaan mini dengan buku bilingual dan cerita Islami."},
-                {icon:"🎨",title:"Studio Seni & Kreativitas",desc:"Ruang khusus untuk finger painting, crafts, dan ekspresi kreatif."},
-                {icon:"🏃",title:"Area Motorik Kasar",desc:"Panjatan, ayunan, dan obstacle course untuk perkembangan fisik."},
-                {icon:"🍽️",title:"Dapur Gizi Halal",desc:"Menu sehat, halal, bergizi setiap hari — disusun oleh ahli gizi."},
-                {icon:"💤",title:"Ruang Tidur Siang",desc:"Ruang tidur bersih, nyaman, dengan rasio pengawas yang ketat."},
+                {icon:"🛡️",title:"Safe Facilities",desc:"Kami menyediakan lingkungan belajar yang aman, nyaman, dan islami — dirancang untuk mendukung tumbuh kembang anak secara optimal"},
+                {icon:"📚",title:"Ruang Kelas",desc:"Ruang belajar yang nyaman, bersih, dan stimulatif dengan ventilasi udara yang baik."},
+                {icon:"💤",title:"Ruang Tidur Siang",desc:"Ruang tidur bersih, nyaman agar energi tetap terjaga setiap hari."},
+                {icon:"🕋",title:"Masjid",desc:"Sekolah dekat dengan masjid untuk membangun kebiasaan sholat sejak dini."},
+                {icon:"🚑",title:"Puskemas",desc:"Sekolah dekat dengan Faskes 1. Mempermudah akses pelayanan kesehatan."},
+                {icon:"💤",title:"Ruang Baca dan Literasi",desc:"Perpustakaan mini dengan variasi buku yang beragam dan cerita Islami. untuk menunjang kecintaan anak akan ilmu."},
               ].map((f,i)=>(
                 <div className="fac-item" key={i}>
                   <div className="fac-icon-box">{f.icon}</div>
