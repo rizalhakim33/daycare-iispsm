@@ -974,12 +974,12 @@ footer .f-copy  { font-size: 12px; color: rgba(255,255,255,.45); text-align: rig
             </div>
             <div className="fac-items">
               {[
-                {icon:"🛡️",title:"Safe Facilities",desc:"Kami menyediakan lingkungan belajar yang aman, nyaman, dan islami — dirancang untuk mendukung tumbuh kembang anak secara optimal"},
+                {icon:"🛡️",title:"Safe Facilities",desc:"Lingkungan belajar yang aman, nyaman, dan islami untuk mendukung tumbuh kembang anak secara optimal"},
                 {icon:"📚",title:"Ruang Kelas",desc:"Ruang belajar yang nyaman, bersih, dan stimulatif dengan ventilasi udara yang baik."},
                 {icon:"💤",title:"Ruang Tidur Siang",desc:"Ruang tidur bersih, nyaman agar energi tetap terjaga setiap hari."},
                 {icon:"🕋",title:"Masjid",desc:"Sekolah dekat dengan masjid untuk membangun kebiasaan sholat sejak dini."},
                 {icon:"🚑",title:"Puskemas",desc:"Sekolah dekat dengan Faskes 1. Mempermudah akses pelayanan kesehatan."},
-                {icon:"💤",title:"Ruang Baca dan Literasi",desc:"Perpustakaan mini dengan variasi buku yang beragam dan cerita Islami. untuk menunjang kecintaan anak akan ilmu."},
+                {icon:"💤",title:"Ruang Baca dan Literasi",desc:"Perpustakaan mini dengan buku yang beragam dan cerita Islami agar anak cinta ilmu dan buku"},
               ].map((f,i)=>(
                 <div className="fac-item" key={i}>
                   <div className="fac-icon-box">{f.icon}</div>
