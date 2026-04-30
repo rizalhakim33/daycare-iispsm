@@ -904,18 +904,17 @@ footer .f-copy  { font-size: 12px; color: rgba(255,255,255,.45); text-align: rig
         </div>
         <div className="programs-grid">
           {[
-            {badge:"teal",age:"3 Bulan – 2 Tahun",icon:"🍼",name:"Infant & Toddler Care",desc:"Perawatan penuh kasih untuk si kecil. Fokus pada perkembangan fisik, stimulasi sensorik, dan rasa aman secara emosional.",list:["Rasio guru 1:2","Full day (07.00–16.00)","Half day (07.00–11.30 / 11.30–16.00)","Insidental (harian)"]},
-            {badge:"mint",age:"2 – 3 Tahun",icon:"🎨",name:"Playgroup",desc:"Belajar melalui bermain yang kreatif — mengembangkan bahasa, kemampuan sosial, dan mengenalkan nilai-nilai Islam.",list:["Rasio guru 1:4","Full day (07.00–16.00)","Half day (07.00–11.30 / 11.30–16.00)","Insidental (harian)"]},
-            {badge:"yellow",age:"3 – 4 Tahun",icon:"📚",name:"KB / Preschool 1",desc:"Lingkungan belajar terstruktur namun menyenangkan — mempersiapkan anak secara akademis dan spiritual.",list:["Rasio guru 1:6","Full day (07.00–16.00)","Half day (07.00–11.30 / 11.30–16.00)","Literasi & numerasi dasar"]},
-            {badge:"orange",age:"5 Tahun",icon:"⭐",name:"TKA / Preschool 2",desc:"Program TK komprehensif membangun fondasi membaca, matematika, sains, dan karakter Islami yang kuat.",list:["Rasio guru 1:8","Full day (07.00–16.00)","Half day (07.00–11.30 / 11.30–16.00)","Bilingual (Indonesia & Inggris)"]},
-            {badge:"",age:"6 Tahun",icon:"🎓",name:"TK B / Preschool 3",desc:"Persiapan masuk SD dengan kurikulum holistik — akademik, karakter Islami, dan kesiapan sosial-emosional.",list:["Rasio guru 1:8","Full day (07.00–16.00)","Half day (07.00–11.30 / 11.30–16.00)","Persiapan masuk SD"]},
+            {badge:"teal",age:"3 Bulan – 1 Tahun",icon:"🍼",name:"Infant",desc:"Perawatan penuh kasih untuk si kecil. Fokus pada perkembangan fisik, stimulasi sensorik, dan rasa aman secara emosional."},
+            {badge:"mint",age:"1 – 3 Tahun",icon:"🎨",name:"Toddler",desc:"Belajar melalui bermain yang kreatif — mengembangkan bahasa, kemampuan sosial, dan mengenalkan nilai-nilai Islam."},
+            {badge:"yellow",age:"4 Tahun",icon:"📚",name:"Preschool 1 / KB",desc:"Lingkungan belajar terstruktur namun menyenangkan — mempersiapkan anak secara akademis dan spiritual."},
+            {badge:"orange",age:"5 Tahun",icon:"⭐",name:"Preschool 2 / TK A",desc:"Program TK komprehensif membangun fondasi membaca, matematika, sains, dan karakter Islami yang kuat."},
+            {badge:"",age:"6 Tahun",icon:"🎓",name:"Preschool 3 / TK B",desc:"Persiapan masuk SD dengan kurikulum holistik — akademik, karakter Islami, dan kesiapan sosial-emosional."},
           ].map((p, i) => (
             <div className="prog-card" key={i}>
               <div className={`prog-age-badge ${p.badge}`} style={p.badge === "" ? {background:"#f0e8f5",color:"#6a2080"} : {}}>{p.age}</div>
               <div className="prog-icon">{p.icon}</div>
               <div className="prog-name">{p.name}</div>
               <p className="prog-desc">{p.desc}</p>
-              <ul className="prog-list">{p.list.map((l,j)=><li key={j}>{l}</li>)}</ul>
             </div>
           ))}
         </div>
