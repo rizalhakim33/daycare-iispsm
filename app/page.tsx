@@ -585,6 +585,11 @@ section { padding: 96px 64px }
   transition: transform .3s; cursor: pointer;
 }
 .gallery-item:hover { transform: scale(1.03) }
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* ── CONTACT ── */
 .contact-section { background: var(--cream2) }
